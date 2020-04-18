@@ -1,0 +1,36 @@
+/*======== Projects ==========*/
+
+.projects_container {
+  display: flex;
+  height: 100vh;
+  max-width:100%;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-section {
+  display: flex;
+  
+}
+
+.projects-section p{
+  color: white ;
+  width: 50%
+}
+.projectCard{ 
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  max-width: 30%;
+}
+
+.projectCard img {
+  max-width:100%;
+}
+.projectCard p {
+  color:white;
+}
+.projectCard h3, .projectCard p {
+  color:white;
+}

@@ -24,7 +24,7 @@ class About extends Component {
    render() {
      return (
        <div id="about">
-         <h2 className={ this.props.title === 'hidden' ? 'invisible': 'about-title'}>About me</h2>
+         <h2 className={ this.props.title === 'hidden' ? 'invisible': 'about_title'}>About me</h2>
          <section className='technologies-section'>
            <p className={
              this.props.paragraph === 'hidden' ? 'invisible' : 'about-paragraph'}>Bacon ipsum dolor amet pig pancetta tongue short ribs buffalo pastrami. Drumstick alcatra salami, short loin shankle pork biltong beef ribs corned beef short ribs. Sausage prosciutto pastrami short ribs, fatback shoulder bacon turducken salami buffalo.</p>
