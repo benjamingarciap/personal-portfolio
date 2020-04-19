@@ -1,6 +1,5 @@
 
 body {
-  background-color:#23163b;
   height: 500vh;
   font-family: 'Hind', sans-serif;
 }
@@ -11,13 +10,11 @@ body {
 .logo {
   display: inline-block;
   height: 2em;
-  margin: 10px 0px 0px 40px;
+  margin: 10px 0px 0px 4.2em;
 }
 
 .navBar { 
   top:0;
-  
-  /* padding-top:5px; */
   width: 100%;
   position:fixed;
   z-index: 20;
@@ -27,7 +24,8 @@ body {
   transition: top 0.3s;
 }
 .navBar-background {
-  background-color: #23163b;
+  // background-color: #23163b;
+  background-color: white;
 }
 .navBar-dissapear {
   top:-60px;
@@ -240,13 +238,14 @@ width: 100%;
 }
 .about-container h2{
   display: block;
-  color:white;
+  color:#ff3f81;
 }
-.about_title{
+
+.section_title {
   font-size: 2em;
 	letter-spacing: -4px;
 	font-family: 'Work Sans', sans-serif;
-	text-transform: uppercase;
+	// text-transform: uppercase;
   font-weight: 500;
   margin: 0px;
   color: #ff3f81;
@@ -288,7 +287,7 @@ width: 100%;
 .card-container img:hover{
   transform: scale(1.05);
 }
-.container-of-technologies {
+.container_of_technologies {
   display:flex;
   justify-content: center;
   max-width: 80%;
@@ -307,7 +306,7 @@ width: 100%;
  max-width: 100px;
  font-weight: 400;
 }
-.container-of-technologies div h3 {
+.container_of_technologies div h3 {
  max-width: 100px;
  font-weight: 400;
  
@@ -320,11 +319,11 @@ width: 100%;
  align-items: center;
  
 }
-.about-paragraph{
+.paragraph-animation {
   margin-top: 0;
   max-width: 816px;
   /* text-align: center; */
-  color:white;
+  color: #A4B1B6;
   /* border: 0.5px solid white; */
   padding: 10px;
   font-weight: 400;

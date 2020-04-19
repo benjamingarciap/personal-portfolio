@@ -1,0 +1,46 @@
+@use '../../App.scss';
+@use '../common/common.module.scss';
+
+.projects_wrapper {
+  padding: 0 4.2em;
+  background: white;
+  height: 100vh;
+}
+
+.projects_header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects_container {
+  /* display: flex;
+  height: 100vh;
+  max-width:100%;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: 100px;
+}
+
+.projectCard { 
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  img {
+    width: 100%;
+  };
+
+  p {
+    color: #A4B1B6;
+  }
+
+  h3 {
+    color:#23163b;
+  }
+}

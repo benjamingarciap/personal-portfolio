@@ -1,0 +1,39 @@
+.positionCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.section_title {
+  font-size: 2em;
+	letter-spacing: -4px;
+	font-family: 'Work Sans', sans-serif;
+	text-transform: uppercase;
+  font-weight: 500;
+  margin: 0px;
+  color: #ff3f81;
+  display: block;
+  animation-name: visible;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/* gives space to betwenn hero and about page */
+.invisible {
+  opacity: 0;
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+    transform: translateX(100px)
+  }
+  50% {
+    
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px)
+    
+  }
+}

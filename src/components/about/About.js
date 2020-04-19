@@ -19,16 +19,14 @@ class About extends Component {
   constructor(props) {    
     super(props);     
    }
-
-
+   
    render() {
      return (
        <div id="about">
-         <h2 className={ this.props.title === 'hidden' ? 'invisible': 'about_title'}>About me</h2>
+         <h2 className={ this.props.title === 'hidden' ? 'invisible': 'section_title'}>About me</h2>
          <section className='technologies-section'>
-           <p className={
-             this.props.paragraph === 'hidden' ? 'invisible' : 'about-paragraph'}>Bacon ipsum dolor amet pig pancetta tongue short ribs buffalo pastrami. Drumstick alcatra salami, short loin shankle pork biltong beef ribs corned beef short ribs. Sausage prosciutto pastrami short ribs, fatback shoulder bacon turducken salami buffalo.</p>
-           <div className='container-of-technologies'>
+           <p className={ this.props.paragraph === 'hidden' ? 'invisible' : 'paragraph-animation'}>Bacon ipsum dolor amet pig pancetta tongue short ribs buffalo pastrami. Drumstick alcatra salami, short loin shankle pork biltong beef ribs corned beef short ribs. Sausage prosciutto pastrami short ribs, fatback shoulder bacon turducken salami buffalo.</p>
+           <div className='container_of_technologies'>
              <Card image={logoNode} title="Node"/>
              <Card image={logoJS} title="Javascript"/>
              <Card image={logoReact} title="React"/>
@@ -39,7 +37,7 @@ class About extends Component {
          </section>
          <section className='skills-section'>
            <p className={
-             this.props.paragraph === 'hidden' ? 'invisible' : 'about-paragraph'}>Bacon ipsum dolor amet pig pancetta tongue short ribs buffalo pastrami. Drumstick alcatra salami, short loin shankle pork biltong beef ribs corned beef short ribs. Sausage prosciutto pastrami short ribs, fatback shoulder bacon turducken salami buffalo.</p>
+             this.props.paragraph === 'hidden' ? 'invisible' : 'paragraph-animation'}>Bacon ipsum dolor amet pig pancetta tongue short ribs buffalo pastrami. Drumstick alcatra salami, short loin shankle pork biltong beef ribs corned beef short ribs. Sausage prosciutto pastrami short ribs, fatback shoulder bacon turducken salami buffalo.</p>
            <div className='container-of-skills'>
              <Card image={logoDynamic} title="Dynamic websites"/>
              <Card image={logoFix} title="Evolving with technologies"/>

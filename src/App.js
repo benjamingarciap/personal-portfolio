@@ -15,15 +15,18 @@ export default function App() {
   const[scrollAbout, setScrollAbout] = useState({ 
     title: 'hidden', 
     paragraph:'hidden' 
-
+  })
+  const[scrollProjects, setScrollProjects] = useState({ 
+    title: 'hidden', 
+    paragraph: 'hidden' 
   })
  
   const handleAnimation = () => {       
     let currentPosition = document.documentElement.scrollTop
-     //console.log(currentPosition);
+     console.log(currentPosition);
      //navbar 
      if (previousPosition < currentPosition ) { 
-       console.log("----------------------------------------------------------") 
+      //  console.log("----------------------------------------------------------") 
        setScrollNav({ position: 'dissapear' });  
      }
      else if (currentPosition < previousPosition ) {  
@@ -31,11 +34,13 @@ export default function App() {
      }
      //changes value of prevScrollpos
      previousPosition = currentPosition;
-     
-
      //about
-     if (currentPosition > 184) {   
-       setScrollAbout({ paragraph: 'visible' });  
+     if (currentPosition > 211) {   
+       setScrollAbout({ paragraph: 'visible', title: 'visible' });  
+     }
+     //projects
+     if (currentPosition > 963) {   
+       setScrollProjects({ paragraph: 'visible', title: 'visible' });  
      }
   }
 
@@ -49,7 +54,7 @@ export default function App() {
       <Hero/>
       <AirSpace/> 
       <About title={scrollAbout.title} paragraph={scrollAbout.paragraph}/>
-      <Projects/>
+      <Projects title={scrollProjects.title} paragraph={scrollProjects.paragraph}/>
       </div>
     )
   }

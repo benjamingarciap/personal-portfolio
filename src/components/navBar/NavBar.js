@@ -44,51 +44,55 @@ export default class Navbar extends Component {
           onClick={this.scrollToTop}
           /></Link>
           <ul>
-
-            <li><Link 
-            to="about"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            >About</Link>
+            <li>
+              <Link 
+              to="about"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              >About</Link>
             </li>
 
             {/* <li className="point">·</li> */}
 
-            <li><Link 
-            to="projects"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            >Projects</Link>
+            <li>
+              <Link 
+              to="projects"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              >Projects</Link>
             </li>
 
             {/* <li className="point">·</li> */}
 
-            <li><Link 
-            to="cv"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            >C.V.</Link>
+            <li>
+              <Link 
+              to="cv"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              >C.V.</Link>
             </li>
 
             {/* <li className="point">·</li> */}
 
-            <li><Link 
-            to="contact"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            >Contact</Link></li>
+            <li>
+              <Link 
+              to="contact"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              >Contact</Link>
+            </li>
 
           </ul>
         </div>

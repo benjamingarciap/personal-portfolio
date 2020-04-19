@@ -12,7 +12,9 @@ class Hero extends React.Component {
   componentDidMount() {
     this.vantaEffect = NET({
       el: this.vantaRef.current,
-      THREE: THREE
+      THREE: THREE,
+      color: 0x0,
+      backgroundColor: 0xffffff
     })
   }
   componentWillUnmount() {

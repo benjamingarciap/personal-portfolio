@@ -6,6 +6,9 @@
 }
 /* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
 
+// .animated-background {
+// 	margin-top: 5em;
+// }
 
 .reveal-text,
 .reveal-text::after {
@@ -36,6 +39,7 @@
 	white-space: nowrap;
 	cursor: default;
 	z-index: 300;
+	// background-color: #ff3f81;
 	background-color: #ff3f81;
 	padding:0px 20px 0px 20px;
 }
