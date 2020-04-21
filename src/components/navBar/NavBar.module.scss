@@ -1,0 +1,112 @@
+
+/*======== navbar ==========*/
+.logo {
+  display: inline-block;
+  height: 2em;
+  margin: 10px 0px 0px 4.2em;
+}
+
+.navBar { 
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: top 0.3s;
+}
+
+.navBar_background {
+  // background-color: #23163b;
+  background-color: white;
+}
+
+.navBar_dissapear {
+  top:-60px;
+}
+
+.navbar_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  // align-items: center;
+}
+
+.social_link{
+  display: block;
+  position: fixed;
+  z-index: 300;
+  transform: rotate(90deg);
+  /* margin-left:94vw;
+  margin-top: 300px; */
+  right: 30px;
+  top:45vh;
+  cursor: pointer;
+  color:black;
+  text-transform: uppercase;
+}
+
+.navBar ul {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  margin-right: 50px;
+  width: 400px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+.point {
+  font-size: 2em;
+}
+
+.navBar ul li {
+  color: #ff3f81;
+  list-style-type:none;
+  cursor: default;
+
+}
+
+.navBar ul li a {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ff3f81;
+  padding:0px;
+  width:70px;
+
+  text-align: center;
+  /* border:1px solid #ff3f81; */
+  line-height: 30px;
+  margin: 0 auto;
+  /* transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+
+
+  background-image: linear-gradient(to right, #ff3f81 50%, transparent 50%);
+  background-position: 100% 0%;
+  background-size: 200% ;
+  
+
+  /* animation-delay: 0.1s; */
+  transition: all 0.1s ease-in;
+
+  animation-name: slideIn;
+  animation-duration: 1.1s;
+  /* animation-fill-mode: forwards;  */
+}
+
+@keyframes slideIn {
+  0%{
+    background-image: linear-gradient(to right, #ff3f81 50%, transparent 50%);
+    background-position: 0% 0%;
+    background-size: 200% ;
+  }
+  
+} 
+
+.navBar ul li a:hover {
+  color: #23163b;
+  background-color:  #ff3f81; 
+  /* border-bottom: 1px solid #ff3f81; */
+}

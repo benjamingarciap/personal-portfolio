@@ -13,6 +13,7 @@ export default function App() {
 
   const[scrollNav, setScrollNav] = useState({ position: 'show', background: 'trasparent' })
   const[scrollAbout, setScrollAbout] = useState({ 
+    background: 'hidden',
     title: 'hidden', 
     paragraph:'hidden' 
   })
@@ -23,7 +24,7 @@ export default function App() {
  
   const handleAnimation = () => {       
     let currentPosition = document.documentElement.scrollTop
-     console.log(currentPosition);
+    //  console.log(currentPosition);
      //navbar 
      if (previousPosition < currentPosition ) { 
       //  console.log("----------------------------------------------------------") 
@@ -36,7 +37,7 @@ export default function App() {
      previousPosition = currentPosition;
      //about
      if (currentPosition > 211) {   
-       setScrollAbout({ paragraph: 'visible', title: 'visible' });  
+       setScrollAbout({ paragraph: 'visible', title: 'visible', background: 'visible'});  
      }
      //projects
      if (currentPosition > 963) {   
@@ -50,11 +51,11 @@ export default function App() {
 
     return (
       <div className="App">
-      <NavBar test={'test'} background={scrollNav.background} position={scrollNav.position}/>
-      <Hero/>
-      <AirSpace/> 
-      <About title={scrollAbout.title} paragraph={scrollAbout.paragraph}/>
-      <Projects title={scrollProjects.title} paragraph={scrollProjects.paragraph}/>
+        <NavBar background={scrollNav.background} position={scrollNav.position}/>
+        <Hero/>
+        <AirSpace/> 
+        <About title={scrollAbout.title} paragraph={scrollAbout.paragraph} background={scrollAbout.background}/>
+        <Projects title={scrollProjects.title} paragraph={scrollProjects.paragraph}/>
       </div>
     )
   }

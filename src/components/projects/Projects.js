@@ -15,7 +15,7 @@ const Projects = props => {
     <div className={ styles.projects_wrapper } id="projects">
       <div className={ styles.projects_header } >
         <h2 className={ title.title === 'hidden' ? 'invisible' : 'section_title' }>Project Portfolio</h2>
-        {console.log(paragraph.paragraph)}
+        {/* {console.log(paragraph.paragraph)} */}
         <p className={ paragraph.paragraph === 'hidden' ? 'invisible' : 'paragraph-animation' }>Bacon ipsum dolor amet pig pancetta tongue short ribs buffalo pastrami. Drumstick alcatra salami, short loin shankle pork biltong beef ribs corned beef short ribs. Sausage prosciutto pastrami short ribs, fatback shoulder bacon turducken salami buffalo.</p>
       </div>
       <div className={ styles.projects_container } >
