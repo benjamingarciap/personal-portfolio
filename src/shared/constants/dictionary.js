@@ -13,6 +13,7 @@ const text = {
   I'm a Front-end Developer with full stack proficiency and graphic design background.
   I'm passionate about creating products with a strong visual identity that are performance efficient, responsive and scalable.
   My main focus has been front-end development with React and Javascript but I’m always excited to use whatever technology is needed for a project.`,
-}
+  ABOUT_ACTION_CALL: `Want to know more about me?`,
+};
 
 export default text;
