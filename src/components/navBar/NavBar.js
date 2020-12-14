@@ -1,78 +1,41 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link, animateScroll as scroll } from "react-scroll";
-import Logo from '../../assets/logo.png'
-import styles from'./NavBar.module.scss'
+import Components from'./NavBarComponents';
+import logo from '../../assets/logo.svg'
+import navBarIds from '../../shared/constants/navBarIds'
+import texts from '../../shared/constants/dictionary'
 
-export default class Navbar extends Component {
-  constructor(props) {    
-    super(props);     
-    this.state = { position: 'hidden', background: 'trasparent'};
-  }
-   
-  scrollToTop = () => {
+const Navbar = props => {
+
+  const scrollToTop = () => {
     scroll.scrollToTop();
   };
 
-  render() {
-    const {background, position} = this.props;
-    return (
-      <nav id={"navbar"} className={ styles.navbar_wrapper }>
-          <div 
-          className={
-          `${styles.navBar} ${background === 'trasparent' ? null : styles.navBar_background} 
-          ${position === 'dissapear' ? styles.navBar_dissapear : null}`}
-          >
-            <Link to="/"><img 
-            className={styles.logo} 
-            src={Logo}
-            alt="Logo"
-            onClick={this.scrollToTop}
-            /></Link>
-            <ul>
-              <li>
-                <Link 
-                to="about"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                >About</Link>
-              </li>
-              <li>
-                <Link 
-                to="projects"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                >Projects</Link>
-              </li>
-              <li>
-                <Link 
-                to="cv"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                >C.V.</Link>
-              </li>
-              <li>
-                <Link 
-                to="contact"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                >Contact</Link>
-              </li>
-            </ul>
-        </div>
-          <Link to="#" className={styles.social_link}>github</Link>
-      </nav>
-    )
-  }
-}
+  const { NavBarContainer, NavBarWrapper, LogoWrapper, Logo, NavBarListWrapper, NavItem } = Components;
+  
+  return (
+    <NavBarContainer id={ navBarIds.NAVBAR } >
+        <NavBarWrapper hide={ props.position === 'dissapear' ? true : null } >
+          <LogoWrapper>
+              <Logo src={logo} alt="Logo" onClick={ scrollToTop }/> 
+          </LogoWrapper>
+          <NavBarListWrapper>
+            <NavItem>
+              <Link to={ navBarIds.ABOUT } smooth={ true } duration={ 500 }>{ texts.NAVBAR_ABOUT }</Link>
+            </NavItem>
+            <NavItem>
+              <Link to={ navBarIds.SKILLS } smooth={ true } duration={ 500 }>{ texts.NAVBAR_SKILLS }</Link>
+            </NavItem>
+            <NavItem>
+              <Link to={ navBarIds.WORK } smooth={ true } duration={ 500 }>{ texts.NAVBAR_WORK }</Link>
+            </NavItem>
+            <NavItem>
+              <Link to={ navBarIds.CONTACT } smooth={true} duration={500}>{ texts.NAVBAR_CONTACT }</Link>
+            </NavItem>
+          </NavBarListWrapper>
+      </NavBarWrapper>
+    </NavBarContainer>
+  );
+};
+
+export default Navbar;

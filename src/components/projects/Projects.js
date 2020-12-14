@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './Projects.module.scss';
 import Project from './Project'
 import roomsGif from '../../assets/rooms.gif'
+import navBarIds from '../../shared/constants/navBarIds'
 
 const Projects = props => { 
   const [title, setTitle] = useState(props);
@@ -12,7 +13,7 @@ const Projects = props => {
   }, [props]);
 
   return (
-    <div className={ styles.projects_wrapper } id="projects">
+    <div className={ styles.projects_wrapper } id={ navBarIds.SKILLS }>
       <div className={ styles.projects_header } >
         <h2 className={ title.title === 'hidden' ? 'invisible' : 'section_title' }>Project Portfolio</h2>
         {/* {console.log(paragraph.paragraph)} */}

@@ -3,17 +3,16 @@ import './App.scss';
 import NavBar from './components/navBar/NavBar'
 import Hero from './components/hero/Hero'
 import About from './components/about/About'
-import AirSpace from './components/AirSpace'
 import Projects from './components/projects/Projects'
-import 'normalize.css';
+import { Normalize } from 'styled-normalize';
+
 
 export default function App() {
 
   var previousPosition =  document.documentElement.scrollTop
 
-  const[scrollNav, setScrollNav] = useState({ position: 'show', background: 'trasparent' })
+  const[scrollNav, setScrollNav] = useState({ position: 'show'})
   const[scrollAbout, setScrollAbout] = useState({ 
-    background: 'hidden',
     title: 'hidden', 
     paragraph:'hidden' 
   })
@@ -51,9 +50,9 @@ export default function App() {
 
     return (
       <div className="App">
-        <NavBar background={scrollNav.background} position={scrollNav.position}/>
+        <Normalize />
+        <NavBar position={scrollNav.position}/>
         <Hero/>
-        <AirSpace/> 
         <About title={scrollAbout.title} paragraph={scrollAbout.paragraph} background={scrollAbout.background}/>
         <Projects title={scrollProjects.title} paragraph={scrollProjects.paragraph}/>
       </div>
