@@ -52,6 +52,7 @@ const NavItem = styled(animations.textRevealer)`
   width:80px;
   text-align: center;
   line-height: 35px;
+  transition: 0.5s;
   :hover {
     color: #ffffff;
     background-color:  #FF3F7F; 

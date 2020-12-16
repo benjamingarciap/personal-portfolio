@@ -3,9 +3,23 @@ import './App.scss';
 import NavBar from './components/navBar/NavBar'
 import Hero from './components/hero/Hero'
 import About from './components/about/About'
-import Projects from './components/projects/Projects'
+import Skills from './components/skills/Skills'
 import { Normalize } from 'styled-normalize';
+import styled from 'styled-components';
 
+const AppLayoutContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background: #23163b;
+`;
+
+const AppLayout = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  max-width: 84%;
+`;
 
 export default function App() {
 
@@ -50,11 +64,15 @@ export default function App() {
 
     return (
       <div className="App">
-        <Normalize />
+        <Normalize/>
         <NavBar position={scrollNav.position}/>
-        <Hero/>
-        <About title={scrollAbout.title} paragraph={scrollAbout.paragraph} background={scrollAbout.background}/>
-        <Projects title={scrollProjects.title} paragraph={scrollProjects.paragraph}/>
+        <AppLayoutContainer>
+          <AppLayout>
+            <Hero/>
+            <About title={scrollAbout.title} paragraph={scrollAbout.paragraph} background={scrollAbout.background}/>
+            <Skills title={scrollProjects.title} paragraph={scrollProjects.paragraph}/>
+          </AppLayout>
+        </AppLayoutContainer>
       </div>
     )
   }

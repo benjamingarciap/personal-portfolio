@@ -5,68 +5,114 @@ import navBarIds from '../../shared/constants/navBarIds'
 import styled from 'styled-components'
 
 
-const Container = styled.div`
+const CenterLayoutContainer = styled.div`
   width: 100%;
 	height: 100vh;
 	background-color: #23163b;
-	position: relative;
-  display: grid;
-	grid-template-rows: repeat(10, 10%);
-	grid-template-columns: repeat(10, 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+`;
+
+const CenterLayout = styled.div`
 `;
 
 const Title = styled.h1`
- width: 1212px;
  color: #23163b;
  font-size: 37px;
- letter-spacing: -4px;
- font-family: 'Work Sans', sans-serif;
+ letter-spacing: -2px;
+ /* font-family: 'Work Sans', sans-serif; */
  text-transform: uppercase;
  font-weight: 500;
  margin: 30px 0 0;
  padding-left: 0.4em;
-
- grid-column: 1 / 11;
- grid-row: 2 / 2;
+ padding-top: 4px;
  background-color: #FF3F7F;
  align-self: center;
  justify-self: center;
 `;
 
+const AboutWrapper = styled.div`
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+`;
+
+const AboutTextContainer = styled.div`
+ height: 443px;
+ width: 80%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ `;
+
 const AboutTextWrapper = styled.div`
- width: 46em;
- grid-area: 3 / 1 / 10 / 5;
- align-self: center;
- justify-self: center;
-`;
+  max-width: 80%;
+ `;
 
-const AboutText = styled.p`
- color: white;
- font-size: 1.3em;
-`;
+ const AboutText = styled.p`
+  color: white;
+  font-size: 1.3em;
+ `;
 
-
-const CallToActionColumn = styled.div`
- height:443px;
- width: 290px;
- grid-area: 1 / 8 / 10 / 11;
- background-color: green;
- align-self: center;
- justify-self: center;
-`;
-
-const CallToActionTextWrapper = styled.div`
+const CallToActionContainer = styled.div`
   display: flex;
-  width: 290px;
-  height: 151px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 443px;
 `;
 
-const ActionCallText = styled.div`
-  justify-self: center;
-  justify-self: center;
+const ActionCallTextWrapper = styled.div`
+  max-width: 90%;
+  text-align: center;
+  font-size: 30px;
+`;
+
+const ActionCallText = styled.p`
   text-align: center;
   font-size: 30px;
   color: white;
+`;
+
+const AboutButtonsContainer = styled.div`
+  width: 100%;
+  height: 169px;
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const ButtonResume = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 27px;
+  height: 50px;
+  width: 100%;
+  padding: 15px 32px;
+  color: white;
+  border: 1px solid #FF3F7F;
+  background-color: #23163b;   
+  /* background-color: white;   */
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s;
+
+  :hover{
+    border: 1px solid #FF3F7F;
+    background-color: #FF3F7F; 
+    color: white;
+  }
+  :focus {
+    outline: none;
+  }
 `;
 
 const About = () => { 
@@ -74,17 +120,28 @@ const About = () => {
   // const { Container, Title, AboutTextWrapper, AboutText, Box3} = Components
 
   return (
-    <Container id={ navBarIds.ABOUT }>
-      <Title>{ text.ABOUT_TITLE }</Title>
-      <AboutTextWrapper>
-        <AboutText>{ text.ABOUT_TEXT }</AboutText>
-      </AboutTextWrapper>
-      <CallToActionColumn>
-        <CallToActionTextWrapper>
-          <ActionCallText>{ text.ABOUT_ACTION_CALL }</ActionCallText>
-        </CallToActionTextWrapper>
-      </CallToActionColumn>
-    </Container>
+    <CenterLayoutContainer id={ navBarIds.ABOUT }>
+      <CenterLayout>
+        <Title>{ text.ABOUT_TITLE }</Title>
+        <AboutWrapper>
+          <AboutTextContainer>
+            <AboutTextWrapper>
+              <AboutText>{ text.ABOUT_TEXT }</AboutText>
+            </AboutTextWrapper>
+          </AboutTextContainer>
+          <CallToActionContainer>
+            <ActionCallTextWrapper>
+              <ActionCallText>{ text.ABOUT_ACTION_CALL }</ActionCallText>
+            </ActionCallTextWrapper>
+            <AboutButtonsContainer>
+              <ButtonResume>Resume</ButtonResume>
+              <ButtonResume>Resume</ButtonResume>
+              <ButtonResume>Resume</ButtonResume>
+            </AboutButtonsContainer>
+          </CallToActionContainer>
+        </AboutWrapper>
+      </CenterLayout>
+    </CenterLayoutContainer>
   );
 };
 

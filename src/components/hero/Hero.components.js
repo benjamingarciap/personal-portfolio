@@ -4,7 +4,7 @@ import animations from '../../shared/styles/animations';
 const HeroContainer = styled.div`
   z-index: 1;
   display: flex;
-	justify-content: flex-start;
+	justify-content: center;
   align-items: center;
   height: 100vh;
   width:100%;
@@ -24,7 +24,7 @@ const HeroGreeting = styled(animations.Flicker)`
 `;
 
 const HeroTextContainer = styled.div`
-  margin: 0px 0px 0px 10em;
+  margin: 0 20em 0 0;
   z-index: 15;
   display: flex;
   flex-direction: column;

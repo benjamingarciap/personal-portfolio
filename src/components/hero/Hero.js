@@ -14,7 +14,7 @@ class Hero extends Component {
   componentDidMount() {
     this.vantaEffect = NET({
       el: this.vantaRef.current,
-      // THREE: THREE,
+      THREE: THREE,
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
