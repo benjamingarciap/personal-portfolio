@@ -5,7 +5,7 @@ const text = {
   NAVBAR_CONTACT:`contact`,
   HERO_TITLE :`BENJAMIN GARCIA`,
   HERO_SUBTITLE :`FRONT-END DEVELOPER`,
-  HERO_GREETING :`Hi! my name is`,
+  HERO_GREETING :`Hi! My name is`,
   HERO_TEXT :`I build `,
   HERO_TEXT_GLITCH :`Awesome`,
   // HERO_TEXT_GLITCH :`Strong`,
