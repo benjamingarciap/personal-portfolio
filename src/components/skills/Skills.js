@@ -160,6 +160,7 @@ const SoftSkillsContainer = styled.div`
   @media (max-width: 414px) {
     flex-direction: column;
     height: 288px;
+    background-color: #23163B;
   }
 `;
 
@@ -368,6 +369,9 @@ const DevDesignCard = styled.div`
   }
   @media (max-width: 800px) {
     flex-direction: column;
+  }
+  @media (max-width: 414px) {
+    background-color: #23163B;
   }
 `;
 
