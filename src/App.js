@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { Normalize } from 'styled-normalize';
 import './App.scss';
+import styled from 'styled-components';
 import NavBar from './components/navBar/NavBar'
 import Hero from './components/hero/Hero'
 import About from './components/about/About'
 import Skills from './components/skills/Skills'
-import { Normalize } from 'styled-normalize';
-import styled from 'styled-components';
+import Work from './components/work/Work'
+import Contact from './components/contact/Contact'
 
 const AppLayoutContainer = styled.div`
   display: flex;
@@ -19,6 +21,7 @@ const AppLayout = styled.div`
   flex-direction: column;
   align-content: center;
   max-width: 84%;
+  /* min-width: 1210px; */
 `;
 
 export default function App() {
@@ -26,21 +29,18 @@ export default function App() {
   var previousPosition =  document.documentElement.scrollTop
 
   const[scrollNav, setScrollNav] = useState({ position: 'show'})
-  const[scrollAbout, setScrollAbout] = useState({ 
-    title: 'hidden', 
-    paragraph:'hidden' 
-  })
-  const[scrollProjects, setScrollProjects] = useState({ 
-    title: 'hidden', 
-    paragraph: 'hidden' 
-  })
+  const[scrollAbout, setScrollAbout] = useState({ show:false })
+  const[scrollSkills, setScrollSkills] = useState({ show:false })
+  const[scrollWork, setScrollWork] = useState({ show:false })
+  const[scrollContact, setScrollContact] = useState({ show:false })
  
   const handleAnimation = () => {       
     let currentPosition = document.documentElement.scrollTop
-    //  console.log(currentPosition);
+     console.log(currentPosition);
      //navbar 
      if (previousPosition < currentPosition ) { 
       //  console.log("----------------------------------------------------------") 
+       console.log( window.scrollY) 
        setScrollNav({ position: 'dissapear' });  
      }
      else if (currentPosition < previousPosition ) {  
@@ -49,16 +49,28 @@ export default function App() {
      //changes value of prevScrollpos
      previousPosition = currentPosition;
      //about
-     if (currentPosition > 211) {   
-       setScrollAbout({ paragraph: 'visible', title: 'visible', background: 'visible'});  
+     if (currentPosition > 149) {   
+       setScrollAbout({ show: true });
+      //  console.log('about')
      }
-     //projects
+     //skills
      if (currentPosition > 963) {   
-       setScrollProjects({ paragraph: 'visible', title: 'visible' });  
+      setScrollSkills({ show: true });  
      }
+     //skills
+     if (currentPosition > 963) {   
+      setScrollSkills({ show: true });  
+     }
+     //skills
+     if (currentPosition > 963) {   
+      setScrollSkills({ show: true });  
+     }
+    //  console.log(window.scrollY)
   }
 
   useEffect(()=>{
+    // window.scrollTo(0, document.documentElement.scrollTop - 1)
+    window.scrollTo(0, 0)
     window.onscroll = () => handleAnimation()
   }, [])
 
@@ -69,12 +81,12 @@ export default function App() {
         <AppLayoutContainer>
           <AppLayout>
             <Hero/>
-            <About title={scrollAbout.title} paragraph={scrollAbout.paragraph} background={scrollAbout.background}/>
-            <Skills title={scrollProjects.title} paragraph={scrollProjects.paragraph}/>
+            <About show={scrollAbout}/>
+            <Skills show={scrollSkills}/>
+            <Work show={scrollWork}/>
+            <Contact show={scrollAbout}/>
           </AppLayout>
         </AppLayoutContainer>
       </div>
     )
-  }
-
-
+}

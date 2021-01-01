@@ -11,18 +11,26 @@ const NavBarWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  top: ${props => props.hide === true ? "-60px" : "0px"};
+  top: ${props => props.hide === true ? "-70px" : "0px"};
   transition: top 1s;
   position: fixed;
   width: 100%;
   height: 4em;
   background-color: #23153c;
+  /* background-color: rgba(35, 22, 59, 0.77); */
+  @media (max-width: 414px) {
+    display: none;
+  }
 `;
 
 const Logo = styled.img`
   display: inline-block;
   height: 2.5em;
   cursor: pointer; 
+
+  @media( max-width: 280px ){
+    height: 2em;
+  }
 `;
 
 const LogoWrapper = styled(animations.textRevealer)`
