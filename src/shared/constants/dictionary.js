@@ -24,7 +24,7 @@ const text = {
   SOFT_SKILLS_SKILLS2 : `Teamwork`,
   SOFT_SKILLS_SKILLS3 : `Creativity`,
   SOFT_SKILLS_SKILLS4 : `Communication skills`,
-  TECH_SKILLS_TITLE : `Development and Design`,
+  TECH_SKILLS_TITLE : `Development and UI`,
   TECH_SKILLS_TEXT : `I have knowledge of back-end and front-end technologies while focusing more on front-end logic and interface design.`,
   TECH_SKILLS_SKILLS1 : `App/Web`,
   TECH_SKILLS_SKILLS2 : `Testable code`,

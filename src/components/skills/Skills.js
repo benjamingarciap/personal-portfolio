@@ -113,6 +113,7 @@ const SubTitle = styled(animations.textRevealer)`
   background-color: #FF3F7F;
   margin:0;
   animation-delay: 900ms;
+
  `;
 
 const SkillsWrapper = styled.div`
@@ -352,7 +353,7 @@ const TechnologiesWrapper = styled.div`
 `;
 
 const DevDesignCard = styled.div`
-  width: 441px;
+  
   height: 361px;
   display: flex;
   flex-direction: column;

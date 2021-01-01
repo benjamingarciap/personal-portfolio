@@ -33,7 +33,6 @@ const MobileNavList = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 62px;
   height: 400px;
   margin-bottom: 92px;
 `;
