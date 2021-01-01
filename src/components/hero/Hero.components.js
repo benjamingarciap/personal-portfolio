@@ -25,6 +25,10 @@ const HeroGreeting = styled(animations.Flicker)`
   @media (max-width: 979px) {
     font-size: 1.2em;
   }
+  @media (max-width: 414px) {
+    /* background-color: rgba(252, 64, 123, 0.36); */
+    background-color: rgba(35, 22, 59, 0.72);
+  }
   @media (max-width: 280px) {
     font-size: 0.9em;
     height: 12px;
