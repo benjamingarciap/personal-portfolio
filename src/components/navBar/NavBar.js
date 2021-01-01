@@ -75,6 +75,7 @@ const Menu =styled.button`
   padding: 0;
   outline: none;
   width: 58px;
+  -webkit-tap-highlight-color: transparent;
 
   @media( max-width: 280px ) {
     width: 44px;
