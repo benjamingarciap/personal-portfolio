@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Normalize } from 'styled-normalize';
 import './App.scss';
 import styled from 'styled-components';
 import NavBar from './components/navBar/NavBar'
@@ -9,6 +8,7 @@ import Skills from './components/skills/Skills'
 import Work from './components/work/Work'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import GlobalStyle from './shared/styles/globalComponents';
 
 const AppLayoutContainer = styled.div`
   display: flex;
@@ -76,7 +76,7 @@ export default function App() {
 
     return (
       <div className="App">
-        <Normalize/>
+        <GlobalStyle/>
         <NavBar position={scrollNav.position}/>
         <AppLayoutContainer>
           <AppLayout>
