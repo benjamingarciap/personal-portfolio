@@ -45,10 +45,11 @@ const MobileNavItem = styled.div`
   font-size: 26px;
   text-align: right;
   width: 100%;
-
-  :hover {
-    background-color: #FF3F7F;
-    color: white;
+  @media (hover: hover) {
+      :hover {
+      background-color: #FF3F7F;
+      color: white;
+    }
   }
 `;
 

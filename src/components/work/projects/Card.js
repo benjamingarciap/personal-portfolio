@@ -24,12 +24,13 @@ const CardTitleWrapper = styled.div`
   cursor: pointer;
   color: #FF3F7F; 
   transition: 0.5s;
-
-  :hover{
-    
-    background-color: #FF3F7F; 
-    color: white; 
+  @media (hover: hover) {
+    :hover{
+      background-color: #FF3F7F; 
+      color: white; 
+    }
   }
+
 
   @media( max-width: 280px ) {
     width: 22px;
@@ -101,12 +102,12 @@ const ButtonResume = styled.button`
   cursor: pointer;
   text-decoration: none;
   transition: 0.5s;
-
-  :hover{
-    background-color: #FF3F7F; 
-    color: white;
+  @media (hover: hover) {
+    :hover{
+      background-color: #FF3F7F; 
+      color: white;
+    }
   }
-
   :focus {
     outline: none;
   }

@@ -169,12 +169,20 @@ const ButtonResume = styled.a`
   cursor: pointer;
   text-decoration: none;
   transition: 0.5s;
+  @media (hover: hover) {
+      :hover{
+      border: 1px solid #FF3F7F;
+      background-color: #FF3F7F; 
+      color: white;
+    }
+  }
 
-  :hover{
+  /* :hover{
     border: 1px solid #FF3F7F;
     background-color: #FF3F7F; 
     color: white;
   }
+   */
   :focus {
     outline: none;
   }
