@@ -33,6 +33,7 @@ const text = {
   WORK_TITLE : `WORK`,
   CONTACT_TITLE : `CONTACT`,
   CONTACT_ACTION_CALL: `Im currently actively looking for new projects and would love to get to know new people in the tech industry. Let’s get in touch!`,
+  FOOTER_TEXT : `Built by Benjamin Garcia 2020`,
 };
 
 export default text;

@@ -8,6 +8,7 @@ import About from './components/about/About'
 import Skills from './components/skills/Skills'
 import Work from './components/work/Work'
 import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
 
 const AppLayoutContainer = styled.div`
   display: flex;
@@ -21,7 +22,6 @@ const AppLayout = styled.div`
   flex-direction: column;
   align-content: center;
   max-width: 84%;
-  /* min-width: 1210px; */
 `;
 
 export default function App() {
@@ -85,6 +85,7 @@ export default function App() {
             <Skills show={scrollSkills}/>
             <Work show={scrollWork}/>
             <Contact show={scrollAbout}/>
+            <Footer></Footer>
           </AppLayout>
         </AppLayoutContainer>
       </div>

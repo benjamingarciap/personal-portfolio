@@ -36,7 +36,7 @@ const CenterLayoutContainer = styled.div`
 `;
 
 const CenterLayout = styled.div`
-  display: ${() => { if( window.scrollY > 2923 ){ 
+  display: ${() => { if( window.scrollY > 2452 ){ 
     // console.log( 'se muestra' ) 
     return `block`} 
     else{ 
