@@ -1,0 +1,23 @@
+<svg width="620" height="266" viewBox="0 0 620 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M619 50L619 33L21 33L21 50L619 50Z" fill="#FF3F7F"/>
+<path d="M21 255L37 255L37 33L21 33L21 255Z" fill="#FF3F7F"/>
+<path d="M616 255L616 239L21 239L21 255L616 255Z" fill="#FF3F7F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M57.2249 69V85.8856H294.892V119.165H57.1279V170.945H294.977V204.731H57V221H311.827V152.319H74.0212V135.638H312V69H57.2249Z" fill="#FF3F7F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M57 220H74V69H57V220Z" fill="#FF3F7F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M58 86H312V69H58V86Z" fill="#FF3F7F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M331 69V220H585V136.407H371.055V153.201H567.839V203.169H347.991V85.0776H584.896V69H331Z" fill="#FF3F7F"/>
+<path d="M604 255L620 255L620 33L604 33L604 255Z" fill="#FF3F7F"/>
+<path d="M21 33V32H20V33H21ZM620 33H621V32H620V33ZM620 255V256H621V255H620ZM21 255H20V256H21V255ZM21 34H620V32H21V34ZM619 33V255H621V33H619ZM620 254H21V256H620V254ZM22 255V33H20V255H22Z" fill="#FF3F7F"/>
+</svg>
+
+<!-- <svg width="599" height="223" viewBox="0 0 599 223" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M598 17.5V0.500013L1.53382e-06 0.5L0 17.5L598 17.5Z" fill="white"/>
+<path d="M1.53382e-06 222.5H16L16 0.500015L1.53382e-06 0.5V222.5Z" fill="white"/>
+<path d="M595 222.5V206.5L1.53382e-06 206.5V222.5L595 222.5Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M36.2249 36.5V53.3856H273.892V86.6648H36.1279V138.445H273.977V172.231H36V188.5H290.827V119.819H53.0212V103.138H291V36.5H36.2249Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M36 187.5H53V36.5H36V187.5Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37 53.5H291V36.5H37V53.5Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M310 36.5V187.5H564V103.907H350.055V120.701H546.839V170.669H326.991V52.5776H563.896V36.5H310Z" fill="white"/>
+<path d="M583 222.5H599V0.500015L583 0.500015V222.5Z" fill="white"/>
+</svg> -->
+
